@@ -1,5 +1,4 @@
 import React from "react";
-
 import banner from "../../../images/hero.png";
 
 const Banner = () => {
@@ -13,13 +12,15 @@ const Banner = () => {
         />
 
         <div>
-          <h1 className="text-5xl font-bold">Lorem ipsum dolor sit amet</h1>
+          <h1 className="text-5xl font-bold text-accent">
+            Lorem ipsum dolor sit amet
+          </h1>
           <p className="py-6">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the
           </p>
-          <button className="hero-button btn btn-primary font-bold border-0">
+          <button className="hero-button btn btn-secondary font-bold border-0 text-white ">
             Get Started
           </button>
         </div>

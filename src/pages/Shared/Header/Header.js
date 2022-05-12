@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 const menuItem = (
   <>
     <li className="mr-3 mb-1">
-      <Link to={`/home`} className="btn">
+      <Link to={`/home`} className="btn text-white bg-primary">
         Home
       </Link>
     </li>
 
     <li className="mr-3 mb-1">
-      <Link to={`/addItem`} className="btn">
+      <Link to={`/addItem`} className="btn text-white bg-primary">
         Add Item
       </Link>
     </li>
@@ -44,15 +44,18 @@ const Header = () => {
             {menuItem}
           </ul>
         </div>
-        <a href="/home" className="btn btn-ghost normal-case text-xl">
+        <a
+          href="/home"
+          className="btn btn-ghost normal-case lg:text-3xl text-xl text-secondary font-extrabold"
+        >
           Tech Warehouse
         </a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItem}</ul>
       </div>
-      <div className="navbar-end">
-        <Link to={`/login`} className="btn">
+      <div className="navbar-end ">
+        <Link to={`/login`} className="btn text-white bg-primary">
           Login{" "}
         </Link>
       </div>

@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Corsair M55 Ambidextrous",
+    "description": "The CORSAIR M55 RGB PRO Gaming Mouse offers game-winning versatility with an ambidextrous design that fits any grip or hand and a highly precise 12,400 DPI optical sensor. Weighing in at just 86g, the M55 RGB PRO's light and versatile ambidextrous design lets you play at your highest level with either hand using your most comfortable grip, be it palm, claw, or fingertip.",
+    "price": "2600 BDT",
+    "img": "https://www.startech.com.bd/image/cache/catalog/mouse/corsair/m55/m55-500x500.jpg",
+    "supplier": "Corsair",
+    "quantity": 12,
+    "sold": 9,
+    "email": "toriqul7218@gmail.com"
+  },
+  {
+    "name": "Intel 11th Gen Core i5-11400F",
+    "description": "This new 11th gen Rocket Lake microarchitecture is manufactured with the 14nm process that comes with six cores and twelve threads. As this chip is updated to the latest BIOS revision, it nicely fits into any Intel 400 and 500 series motherboards.",
+    "price": "15,800 BDT",
+    "img": "https://www.startech.com.bd/image/cache/catalog/processor/Intel/core-i5-11400f/core-i5-11400f-500x500.jpg",
+    "supplier": "INTEL",
+    "quantity": 11,
+    "sold": 0
+  },
+  {
+    "_id": {
+      "$oid": "627d5275e4fdd5d20d40a507"
+    },
+    "name": "Razer Viper Ultimate",
+    "description": "25% faster than any other wireless technology available, you won't even realize that you're gaming with a wireless mouse due to its high-speed transmission, lowest click latency, and seamless frequency switching in the noisiest, data-saturated environments. 20,000 DPI with 99.6% resolution accuracy. ",
+    "price": "11,100 BDT",
+    "img": "https://www.startech.com.bd/image/cache/catalog/mouse/razer/razer-viper-ultimate/razer-viper-ultimate-101-500x500.jpg",
+    "supplier": "Razer",
+    "quantity": 13,
+    "sold": 0
+  },
+  {
+    "name": "Edifier K6500 Headphone",
+    "description": "Edifier K6500 is made from high-quality protein leather material. It is soft and comfortable to wear. It features a narrow frame earmuffs design, long-lasting wear, and not easy to sweat. ",
+    "price": "10,000 BDT",
+    "img": "https://www.startech.com.bd/image/cache/catalog/headphone/edifier/k6500/k6500-01-500x500.jpg",
+    "supplier": "Edifier",
+    "quantity": 22,
+    "sold": 1
+  },
+  {
+    "name": "HP DeskJet 2320 Printer",
+    "description": "The HP DeskJet 2320 All-in-One Printer can print, copy, scan at a low cost. It has a print speed of 7.5/5.5 ppm (black/color) and 60 sheet input / 25 sheet output.  It can print the first page out as fast as 15 sec and it has a duty cycle of up to 1000 pages. A4; B5; A6; DL envelope media sizes are supported with this printer.",
+    "price": "5,700 BDT",
+    "img": "https://www.startech.com.bd/image/cache/catalog/printer/hp-printer/2320/2320-01-500x500.jpg",
+    "supplier": "HP",
+    "quantity": 22,
+    "sold": 0
+  },
+  {
+    "name": "Corsair Vengeance 8GB",
+    "description": "CORSAIR VENGEANCE RGB PRO Series DDR4 overclocked memory lights up your PC with mesmerizing dynamic multi-zone RGB lighting, while delivering the best in DDR4 performance.",
+    "price": "4200 BDT",
+    "img": "https://www.startech.com.bd/image/cache/catalog/ram/cosair/white-vengeance-rgb-pro/white-vengeance-rgb-pro-500x500.jpg",
+    "supplier": "Corsair",
+    "quantity": 11,
+    "sold": 0
+  }
+]
