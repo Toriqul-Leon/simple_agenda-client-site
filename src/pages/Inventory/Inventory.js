@@ -9,7 +9,7 @@ const Inventory = () => {
   const handleRemoveItem = async (productId) => {
     const result = await confirm("Are you really sure?");
     if (result) {
-      const url = `http://localhost:5000/product/${productId}`;
+      const url = `https://fast-ridge-50132.herokuapp.com/product/${productId}`;
       fetch(url, {
         method: "DELETE",
       })

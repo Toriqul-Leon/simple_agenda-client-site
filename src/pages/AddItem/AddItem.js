@@ -22,7 +22,7 @@ const AddItem = () => {
     };
 
     // !Send Data to the server
-    const url = `http://localhost:5000/products`;
+    const url = `https://fast-ridge-50132.herokuapp.com/products`;
     fetch(url, {
       method: "POST",
       headers: {

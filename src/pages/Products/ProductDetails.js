@@ -7,7 +7,7 @@ const ProductDetails = () => {
   const [products, setProducts] = useProducts();
   const { productId } = useParams();
   useEffect(() => {
-    const url = `http://localhost:5000/product/${productId}`;
+    const url = `https://fast-ridge-50132.herokuapp.com/product/${productId}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setProduct(data));
@@ -28,7 +28,7 @@ const ProductDetails = () => {
       };
 
       // !Send data for update Delivered
-      const url = `http://localhost:5000/product/${productId}`;
+      const url = `https://fast-ridge-50132.herokuapp.com/product/${productId}`;
       fetch(url, {
         method: "PUT",
         headers: {
@@ -53,7 +53,7 @@ const ProductDetails = () => {
     const updatedProduct = { name, img, supplier, description, quantity };
 
     // !Send data for update Sold
-    const url = `http://localhost:5000/product/${productId}`;
+    const url = `https://fast-ridge-50132.herokuapp.com/product/${productId}`;
     fetch(url, {
       method: "PUT",
       headers: {
