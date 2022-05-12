@@ -16,6 +16,11 @@ const Product = ({ product }) => {
             <h4>
               Available: <strong>{quantity}</strong>{" "}
             </h4>
+            <h6>
+              <small>
+                Price: <strong> {price}</strong>{" "}
+              </small>
+            </h6>
             <div class="card-actions">
               <button class="btn btn-primary text-white">Manage Product</button>
             </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
 import Product from "./Product";
 
@@ -21,9 +22,9 @@ const Products = () => {
       </div>
       <div className="w-full mb-10 flex justify-center items-center ">
         {" "}
-        <button class="text-white btn btn-wide btn-secondary">
-          See All Product
-        </button>
+        <Link to={`/inventory`} class="text-white btn btn-wide btn-secondary">
+          Manage Inventory
+        </Link>
       </div>
     </div>
   );
