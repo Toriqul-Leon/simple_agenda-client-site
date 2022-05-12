@@ -14,6 +14,11 @@ const menuItem = (
         Add Item
       </Link>
     </li>
+    <li className="mr-3 mb-1">
+      <Link to={`/inventory`} className="btn text-white bg-primary">
+        Inventory
+      </Link>
+    </li>
   </>
 );
 const Header = () => {

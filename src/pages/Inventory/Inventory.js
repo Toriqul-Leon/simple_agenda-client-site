@@ -1,5 +1,6 @@
 import React from "react";
 import { confirm } from "react-confirm-box";
+import { Link } from "react-router-dom";
 import useProducts from "../../hooks/useProducts";
 
 const Inventory = () => {
@@ -28,9 +29,12 @@ const Inventory = () => {
         className="my-10 flex justify-center
       "
       >
-        <button class=" btn btn-wide btn-secondary text-white ">
-          Add Item
-        </button>
+        <Link
+          className="btn btn-secondary mx-auto d-block my-3 py-3 text-white"
+          to={`/addItem`}
+        >
+          Add New Item
+        </Link>
       </div>
       <div className="overflow-x-auto mb-10">
         <table className="table w-full">

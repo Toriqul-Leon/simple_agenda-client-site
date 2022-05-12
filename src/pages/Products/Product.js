@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-  const { name, description, price, img, supplier, quantity } = product;
+  const { _id, name, description, price, img, supplier, quantity } = product;
   return (
     <>
       {" "}
@@ -22,7 +23,12 @@ const Product = ({ product }) => {
               </small>
             </h6>
             <div class="card-actions">
-              <button class="btn btn-primary text-white">Manage Product</button>
+              <Link
+                to={`/productDetails/${_id}`}
+                class="btn btn-primary text-white"
+              >
+                Details
+              </Link>
             </div>
           </div>
         </div>
