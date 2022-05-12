@@ -6,12 +6,6 @@ import Product from "./Product";
 const Products = () => {
   const [products, setProducts] = useProducts();
 
-  useEffect(() => {
-    fetch("services.json")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
-  }, []);
-
   return (
     <div>
       <h2 className="text-center font-bold text-4xl mb-2">Products</h2>

@@ -1,9 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { confirm } from "react-confirm-box";
 import useProducts from "../../hooks/useProducts";
 
 const Inventory = () => {
   const [products, setProducts] = useProducts();
+
+  const handleRemoveItem = async (productId) => {
+    const result = await confirm("Are you really sure?");
+    if (result) {
+      const url = `http://localhost:5000/product/${productId}`;
+      fetch(url, {
+        method: "DELETE",
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          const productsLeft = products.filter(
+            (product) => product._id !== productId
+          );
+          setProducts(productsLeft);
+        });
+    }
+  };
 
   return (
     <div>
@@ -15,7 +32,7 @@ const Inventory = () => {
           Add Item
         </button>
       </div>
-      <div className="overflow-x-auto">
+      <div className="overflow-x-auto mb-10">
         <table className="table w-full">
           {/* head */}
           <thead>
@@ -23,8 +40,9 @@ const Inventory = () => {
               <th />
               <th>Name</th>
               <th>Quantity</th>
-              <th>Favorite Color</th>
-              <th>Favorite Color</th>
+              <th>Supplier</th>
+              <th>Price</th>
+              <th></th>
             </tr>
           </thead>
           <tbody>
@@ -34,9 +52,18 @@ const Inventory = () => {
                   <td></td>
                   <td>{p.name}</td>
                   <td>{p.quantity}</td>
-                  <td>Price</td>
                   <td>
-                    <button class="btn bg-red-500 text-white ">Delete</button>
+                    {" "}
+                    <strong>{p.supplier}</strong>{" "}
+                  </td>
+                  <td>{p.price}</td>
+                  <td>
+                    <button
+                      onClick={() => handleRemoveItem(p._id)}
+                      class="btn bg-red-500 text-white "
+                    >
+                      Delete
+                    </button>
                   </td>
                 </tr>
               );
