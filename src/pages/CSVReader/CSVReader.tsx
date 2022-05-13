@@ -34,12 +34,10 @@ const styles = {
 
 export default function CSVReader() {
   const { CSVReader } = useCSVReader();
-  //   const [data, setData] = useState([]);
 
   const [columnData, setColumnData] = useState([]);
   const [rowData, setRowData] = useState([]);
-  console.log(columnData);
-  console.log(rowData);
+
   return (
     <div>
       <CSVReader
@@ -109,8 +107,8 @@ export default function CSVReader() {
             {rowData.map((r) => {
               return (
                 <tr>
-                  <td>{r.username}</td>
-                  <td>{r._identifier}</td>
+                  <td>{r.login_email || r.username}</td>
+                  <td>{r._identifier || r.identifier}</td>
                   <td>{r.first_name}</td>
                   <td>{r.last_name}</td>
                 </tr>
