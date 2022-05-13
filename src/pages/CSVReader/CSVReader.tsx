@@ -102,15 +102,13 @@ export default function CSVReader() {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
-
             {rowData.map((r) => {
               return (
                 <tr>
-                  <td>{r.login_email || r.username}</td>
-                  <td>{r._identifier || r.identifier}</td>
-                  <td>{r.first_name}</td>
-                  <td>{r.last_name}</td>
+                  <td>{r.product_name}</td>
+                  <td>{r.quantity}</td>
+                  <td>{r.supplier}</td>
+                  <td>{r.price}</td>
                 </tr>
               );
             })}
