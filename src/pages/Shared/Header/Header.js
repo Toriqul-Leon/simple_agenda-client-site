@@ -19,6 +19,11 @@ const menuItem = (
         Inventory
       </Link>
     </li>
+    <li className=" mb-1">
+      <Link to={`/CSVReader`} className="btn text-white bg-primary">
+        Convert CSV
+      </Link>
+    </li>
   </>
 );
 const Header = () => {
@@ -49,12 +54,14 @@ const Header = () => {
             {menuItem}
           </ul>
         </div>
-        <a
-          href="/home"
-          className="btn btn-ghost normal-case lg:text-3xl text-xl text-secondary font-extrabold"
-        >
-          Tech Warehouse
-        </a>
+        <div>
+          <a
+            href="/home"
+            className="btn btn-ghost normal-case lg:text-3xl text-xl text-secondary font-extrabold "
+          >
+            Tech Warehouse
+          </a>
+        </div>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal p-0">{menuItem}</ul>
