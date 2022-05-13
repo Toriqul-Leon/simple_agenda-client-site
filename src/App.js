@@ -6,6 +6,7 @@ import Inventory from "./pages/Inventory/Inventory";
 import AddItem from "./pages/AddItem/AddItem";
 import ProductDetails from "./pages/Products/ProductDetails";
 import NotFound from "./pages/Shared/NotFound/NotFound";
+import CSVReader from "./pages/CSVReader/CSVReader.tsx";
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/home" element={<Home />} />
         <Route path="/inventory" element={<Inventory />} />
+
         <Route path="/addItem" element={<AddItem />} />
+        <Route path="/CSVReader" element={<CSVReader />} />
+
         <Route path="/productDetails/:productId" element={<ProductDetails />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
